@@ -64,7 +64,7 @@ def delete_member(member_id):
     if not deleted:
         return jsonify({'message': 'No se encontró ningún miembro'}), 404
     return jsonify({'message': "Miembro eliminado correctamente",
-            'results': jackson_family.get_all_members()}), 200
+                    'results': jackson_family.get_all_members()}), 200
 
 
 # This only runs if `$ python src/app.py` is executed
